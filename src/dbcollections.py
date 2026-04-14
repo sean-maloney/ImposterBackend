@@ -9,3 +9,12 @@ class WordsCollection(Collection):
         self.category = category
         self.word = word
         self.hint = hint
+
+
+class UsersCollection(Collection):
+    _name = "users"
+
+    def __init__(self, name: str, email: str, password_hash: str) -> None:
+        self.name = name
+        self.email = email
+        self.password_hash = password_hash
